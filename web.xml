@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : web.xml
+    Created on : 14 Δεκέμβριος 2011, 1:21 μμ
+    Author     : irkarami
+    Description:
+        Purpose of the document follows.
+-->
+<web-app>
+    <servlet>
+<servlet-name>myjsp</servlet-name>
+<jsp-file>/index.jsp</jsp-file>
+
+<init-param>
+<param-name>prcafe</param-name>
+<param-value>18.50</param-value>
+</init-param>
+
+<init-param>
+<param-name>prsugar</param-name>
+<param-value>6.95</param-value>
+</init-param>
+
+<init-param>
+<param-name>prwater</param-name>
+<param-value>1.29</param-value>
+</init-param>
+
+</servlet>
+ 
+<servlet-mapping>
+<servlet-name>myjsp</servlet-name>
+<url-pattern>/index.jsp</url-pattern>
+</servlet-mapping>
+
+</web-app>
